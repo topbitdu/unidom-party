@@ -5,9 +5,9 @@ class CreateUnidomPartyRelations < ActiveRecord::Migration
     create_table :unidom_party_relations, id: :uuid do |t|
 
       t.references :source_party, type: :uuid, null: false,
-        polymorphic:            { null: false, default: '', limit: 200 }
+        polymorphic: { null: false, default: '', limit: 200 }
       t.references :target_party, type: :uuid, null: false,
-        polymorphic:            { null: false, default: '', limit: 200 }
+        polymorphic: { null: false, default: '', limit: 200 }
 
       t.column :linkage_code, 'char(4)', null: false, default: 'FRND'
 

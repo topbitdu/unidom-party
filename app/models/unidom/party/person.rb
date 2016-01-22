@@ -24,13 +24,13 @@ class Unidom::Party::Person < ActiveRecord::Base
   #has_many :china_mobile_phone_numbers, through:    :contact_subscriptions,         source: :contact, source_type: 'Contact::ChinaMobilePhoneNumber'
 
   has_many :target_linkings, class_name: 'Party::PartyLinking', as:     :source_party
-  has_many :target_people,   through:    :target_linkings,      source: :target_party, source_type: 'Party::Person'
-  has_many :target_shops,    through:    :target_linkings,      source: :target_party, source_type: 'Party::Shop'
+  #has_many :target_people,   through:    :target_linkings,      source: :target_party, source_type: 'Party::Person'
+  #has_many :target_shops,    through:    :target_linkings,      source: :target_party, source_type: 'Party::Shop'
 
   has_many :source_linkings, class_name: 'Party::PartyLinking', as:     :target_party
-  has_many :source_people,   through:    :source_linkings,      source: :source_party, source_type: 'Party::Person'
-  has_many :source_shops,    through:    :source_linkings,      source: :source_party, source_type: 'Party::Shop'
+  #has_many :source_people,   through:    :source_linkings,      source: :source_party, source_type: 'Party::Person'
+  #has_many :source_shops,    through:    :source_linkings,      source: :source_party, source_type: 'Party::Shop'
 
-  #include ModelExtension
+  include ::Unidom::Common::ModelExtension
 
 end

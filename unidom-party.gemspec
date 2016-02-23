@@ -7,13 +7,12 @@ require 'unidom/party/version'
 
 Gem::Specification.new do |spec|
 
-  spec.name    = 'unidom-party'
-  spec.version = Unidom::Party::VERSION
-
+  spec.name        = 'unidom-party'
+  spec.version     = Unidom::Party::VERSION
   spec.authors     = [ 'Topbit Du' ]
   spec.email       = [ 'topbit.du@gmail.com' ]
-  spec.summary     = %q{The Party domain model engine includes Person, Shop, and Company models.}
-  spec.description = %q{Unidom (UNIfied Domain Object Model) is a series of domain model engines. The Party domain model engine includes Person, Shop, and Company models. Unidom (统一领域对象模型)是一系列的领域模型引擎。参与者领域模型引擎包括个人、店铺、公司的模型。}
+  spec.summary     = 'Unidom Party Domain Model Engine 参与者领域模型引擎'
+  spec.description = 'Unidom (UNIfied Domain Object Model) is a series of domain model engines. The Party domain model engine includes Person, Shop, and Company models. Unidom (统一领域对象模型)是一系列的领域模型引擎。参与者领域模型引擎包括个人、店铺、公司的模型。'
   spec.homepage    = 'http://github.com/topbitdu/unidom-party'
   spec.license     = 'MIT'
 

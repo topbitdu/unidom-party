@@ -6,6 +6,6 @@ class Unidom::Party::Shop < ActiveRecord::Base
 
   validates :name, presence: true, length: { in: 2..self.columns_hash['name'].limit }
 
-  include ::Unidom::Common::ModelExtension
+  include Unidom::Common::Concerns::ModelExtension
 
 end

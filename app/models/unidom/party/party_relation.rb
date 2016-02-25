@@ -31,6 +31,6 @@ class Unidom::Party::Person < ActiveRecord::Base
   #has_many :source_people,   through:    :source_linkings,      source: :source_party, source_type: 'Party::Person'
   #has_many :source_shops,    through:    :source_linkings,      source: :source_party, source_type: 'Party::Shop'
 
-  include ::Unidom::Common::ModelExtension
+  include Unidom::Common::Concerns::ModelExtension
 
 end

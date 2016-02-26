@@ -18,7 +18,7 @@ rake db:migrate
 
 ## Call the Model
 ```ruby
-Unidom::Party::Company.valid_at.alive.first
+Unidom::Party::PartyRelation.valid_at.alive.first
 Unidom::Party::Shop.valid_at.alive.first
 Unidom::Party::People.valid_at.alive.first
 ```

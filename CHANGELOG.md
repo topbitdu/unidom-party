@@ -9,3 +9,6 @@
 1. Improved the Party Relation model to include the Model Extension concern
 2. Improved the Person model to include the Model Extension concern
 3. Improved the Shop model to include the Model Extension concern
+
+## v0.3
+1. Government Agency model & migration

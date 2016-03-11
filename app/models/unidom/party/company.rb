@@ -1,8 +1,8 @@
-# Shop 是店铺。
+# Company 是公司。
 
-class Unidom::Party::Shop < ActiveRecord::Base
+class Unidom::Party::Company < ActiveRecord::Base
 
-  self.table_name = 'unidom_shops'
+  self.table_name = 'unidom_companies'
 
   validates :name, presence: true, length: { in: 2..self.columns_hash['name'].limit }
 

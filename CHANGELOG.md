@@ -12,3 +12,6 @@
 
 ## v0.3
 1. Government Agency model & migration
+
+## v0.4
+1. Company model & migration

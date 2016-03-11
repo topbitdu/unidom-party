@@ -18,7 +18,15 @@ rake db:migrate
 
 ## Call the Model
 ```ruby
-Unidom::Party::PartyRelation.valid_at.alive.first
-Unidom::Party::Shop.valid_at.alive.first
-Unidom::Party::People.valid_at.alive.first
+company = Unidom::Party::Company.valid_at.alive.first
+company.target_party_relations
+
+shop = Unidom::Party::Shop.valid_at.alive.first
+shop.source_party_relations
+
+person = Unidom::Party::People.valid_at.alive.first
+person.target_party_relations
+
+government_agency = Unidom::Party::GovernmentAgency.valid_at.alive.first
+government_agency.supervision_region
 ```

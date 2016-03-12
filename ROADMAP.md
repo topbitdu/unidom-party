@@ -15,3 +15,6 @@
 
 ## v0.4
 1. Company model & migration
+
+## v0.5
+1. Improved the Ruby Gem Specification to depend on unidom-common v0.4.

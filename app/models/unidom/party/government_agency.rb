@@ -1,7 +1,7 @@
 # Government Agency 是政府机构。
 class Unidom::Party::GovernmentAgency < ActiveRecord::Base
 
-  self.table = 'unidom_government_agencies'
+  self.table_name = 'unidom_government_agencies'
 
   validates :name, presence: true, length: { in: 2..self.columns_hash['name'].limit }
 

@@ -2,9 +2,10 @@
 
 class Unidom::Party::PartyRelation < ActiveRecord::Base
 
-  self.table_name = 'unidom_people'
+  self.table_name = 'unidom_party_relations'
 
-  validates :name, presence: true, length: { in: 2..self.columns_hash['name'].limit }
+  validates :grade,    presence: true, numericality: { integer_only: true }
+  validates :priority, presence: true, numericality: { integer_only: true }
 
   belongs_to :source_party, polymorphic: true
   belongs_to :target_party, polymorphic: true

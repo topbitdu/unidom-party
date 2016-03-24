@@ -10,6 +10,16 @@ class Unidom::Party::PartyRelation < ActiveRecord::Base
   belongs_to :source_party, polymorphic: true
   belongs_to :target_party, polymorphic: true
 
+  scope :source_party_is, ->(source_party) { where source_party: source_party }
+  scope :target_party_is, ->(target_party) { where target_party: target_party }
+
   include Unidom::Common::Concerns::ModelExtension
+
+  def self.relate(source_party, target_party, linkage_code: 'FRND', grade: 0, priority: 0, opened_at: Time.now, attributes: {})
+    relation = source_party_is(source_party).target_party_is(target_party).linkage_coded_as(linkage_code).first_or_initialize grade: grade, priority: priority, opened_at: opened_at
+    relation.assign_attributes attributes
+    relation.save
+    relation
+  end
 
 end

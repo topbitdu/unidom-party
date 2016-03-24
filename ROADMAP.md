@@ -20,6 +20,10 @@
 1. Improved the Ruby Gem Specification to depend on unidom-common v0.5
 2. Improved the Government Agency model for table name
 
-## 0.5
+## v0.5
 1. Improved the Party Relation model to add validations for the #grade & #priority attributes
 2. Improved the Party Relation model for table name
+
+## v0.6
+1. Improved the Party Relation model to add the ::relate method
+2. Improved the Party Relation model to add the #source_party_is scope & the #target_party_is scope

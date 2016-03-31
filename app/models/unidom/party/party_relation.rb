@@ -15,10 +15,10 @@ class Unidom::Party::PartyRelation < ActiveRecord::Base
 
   include Unidom::Common::Concerns::ModelExtension
 
-  def self.relate(source_party, target_party, linkage_code: 'FRND', grade: 0, priority: 0, opened_at: Time.now, attributes: {})
+  def self.relate(source_party, target_party, linkage_code: 'FRND', grade: 0, opened_at: Time.now, priority: 0, attributes: {})
     relation = source_party_is(source_party).target_party_is(target_party).linkage_coded_as(linkage_code).first_or_initialize grade: grade, priority: priority, opened_at: opened_at
     relation.assign_attributes attributes
-    relation.save
+    relation.save!
     relation
   end
 

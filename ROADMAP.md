@@ -29,4 +29,4 @@
 2. Improved the Party Relation model to add the #source_party_is scope & the #target_party_is scope
 
 ## v0.7
-1. Improved the Ruby Gem Specification to depend on unidom-common v0.7
+1. Improved the Ruby Gem Specification to depend on unidom-common v0.8

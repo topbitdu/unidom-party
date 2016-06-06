@@ -6,7 +6,7 @@
 3. Shop model & migration
 
 ## v0.2
-1. Improved the Party Relation model to include the Model Extension concern
+1. Improve the Party Relation model to include the Model Extension concern
 2. Improved the Person model to include the Model Extension concern
 3. Improved the Shop model to include the Model Extension concern
 

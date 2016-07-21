@@ -29,4 +29,18 @@
 2. Improved the Party Relation model to add the #source_party_is scope & the #target_party_is scope
 
 ## v0.7
-1. Improve the Ruby Gem Specification to depend on unidom-common v0.9
+1. Improve the Party Relation model to add the ::relate! method
+2. Improve the Party Relation model to deprecate the ::relate method
+3. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+
+## v1.0
+1. Improve the Party Relation model to support the Keyword Arguments
+2. Remove the deprecated methods
+
+## v1.1
+1. As Source Party concern
+2. As Target Party concern
+
+## v1.2
+1. Improve the As Source Party concern to add the #relate! method
+2. Improve the As Target Party concern to add the #is_related! method

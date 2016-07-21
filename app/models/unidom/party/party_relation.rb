@@ -4,6 +4,8 @@ class Unidom::Party::PartyRelation < ActiveRecord::Base
 
   self.table_name = 'unidom_party_relations'
 
+  include Unidom::Common::Concerns::ModelExtension
+
   validates :grade,    presence: true, numericality: { integer_only: true }
   validates :priority, presence: true, numericality: { integer_only: true }
 
@@ -13,13 +15,21 @@ class Unidom::Party::PartyRelation < ActiveRecord::Base
   scope :source_party_is, ->(source_party) { where source_party: source_party }
   scope :target_party_is, ->(target_party) { where target_party: target_party }
 
-  include Unidom::Common::Concerns::ModelExtension
-
   def self.relate(source_party, target_party, linkage_code: 'FRND', grade: 0, opened_at: Time.now, priority: 0, attributes: {})
     relation = source_party_is(source_party).target_party_is(target_party).linkage_coded_as(linkage_code).first_or_initialize grade: grade, priority: priority, opened_at: opened_at
     relation.assign_attributes attributes
     relation.save!
     relation
+  end
+
+  def self.relate!(source_party, target_party, linkage_code: 'FRND', grade: 0, opened_at: Time.now, priority: 0, attributes: {})
+    relation = source_party_is(source_party).target_party_is(target_party).linkage_coded_as(linkage_code).first_or_initialize grade: grade, priority: priority, opened_at: opened_at
+    relation.assign_attributes attributes
+    relation.save!
+  end
+
+  class << self
+    deprecate relate: :relate!, deprecator: ActiveSupport::Deprecation.new('1.0', 'unidom-party')
   end
 
 end

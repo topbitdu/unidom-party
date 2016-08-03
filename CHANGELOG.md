@@ -32,3 +32,7 @@
 1. Improved the Party Relation model to add the ::relate! method
 2. Improved the Party Relation model to deprecate the ::relate method
 3. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
+
+## v1.0
+1. Improved the Party Relation model to support the Keyword Arguments
+2. Removed the deprecated methods

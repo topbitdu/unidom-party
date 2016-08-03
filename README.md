@@ -35,7 +35,7 @@ person.target_party_relations
 government_agency = Unidom::Party::GovernmentAgency.valid_at.alive.first
 government_agency.supervision_region
 
-relation = Unidom::Party::PartyRelation.relate! company, person, linkage_code: 'EMPL', grade: 0, priority: 0, opened_at: Time.now, attributes: {}
+relation = Unidom::Party::PartyRelation.relate! source_party: company, target_party: person, linkage_code: 'EMPL', grade: 0, priority: 0, opened_at: Time.now, attributes: {}
 # The company employs the person
 
 Unidom::Party::PartyRelation.source_party_is(company).target_party_is(person).valid_at.alive

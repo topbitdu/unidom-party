@@ -17,7 +17,7 @@
 1. Company model & migration
 
 ## v0.4.1
-1. Improved the Ruby Gem Specification to depend on unidom-common v0.5
+1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 2. Improved the Government Agency model for table name
 
 ## v0.5
@@ -36,6 +36,9 @@
 ## v1.0
 1. Improve the Party Relation model to support the Keyword Arguments
 2. Remove the deprecated methods
+
+## v1.0.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
 
 ## v1.1
 1. As Source Party concern

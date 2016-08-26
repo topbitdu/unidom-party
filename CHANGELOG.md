@@ -39,3 +39,6 @@
 
 ## v1.0.1
 1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.0
+
+## v1.0.2
+1. Improved the Party Relation model to return the created model in the ::relate! method

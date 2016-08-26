@@ -19,6 +19,7 @@ class Unidom::Party::PartyRelation < ActiveRecord::Base
     relation = source_party_is(source_party).target_party_is(target_party).linkage_coded_as(linkage_code).first_or_initialize grade: grade, priority: priority, opened_at: opened_at
     relation.assign_attributes attributes
     relation.save!
+    relation
   end
 
 end

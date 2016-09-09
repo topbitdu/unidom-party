@@ -42,3 +42,8 @@
 
 ## v1.0.2
 1. Improved the Party Relation model to return the created model in the ::relate! method
+
+## v1.1
+1. As Source Party concern
+2. As Target Party concern
+3. Improved the Company model, the Government Agency model, the Person model, & the Shop model to include the As Source Party concern & the As Target Party concern

@@ -53,7 +53,9 @@ include Unidom::Party::Concerns::AsTargetParty
 ### As Source Party concern
 The As Source Party concern do the following tasks for the includer automatically:  
 1. Define the has_many :target_party_relations macro as: ``has_many :target_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :source_party``
+2. Define the #relate! method as: ``relate!(to: nil, due_to: nil, at: Time.now)``
 
 ### As Target Party concern
 The As Target Party concern do the following tasks for the includer automatically:  
 1. Define the has_many :source_party_relations macro as: ``has_many :source_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :target_party``
+2. Define the #is_related! method as: ``is_related!(to: nil, due_to: nil, at: Time.now)``

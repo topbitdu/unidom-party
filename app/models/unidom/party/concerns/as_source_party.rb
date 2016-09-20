@@ -6,6 +6,14 @@ module Unidom::Party::Concerns::AsSourceParty
 
     has_many :target_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :source_party
 
+    def relate!(to: nil, due_to: nil, at: Time.now)
+      target_party_relations.create! target_party: to, linkage_code: due_to, opened_at: at
+    end
+
+    #def relate?(to: nil, due_to: nil, at: Time.now)
+    #  target_party_relations.target_party_is(to).linkage_coded_as(due_to).valid_at(now: at).alive.exists?
+    #end
+
   end
 
   module ClassMethods

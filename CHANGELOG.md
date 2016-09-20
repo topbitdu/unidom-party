@@ -47,3 +47,7 @@
 1. As Source Party concern
 2. As Target Party concern
 3. Improved the Company model, the Government Agency model, the Person model, & the Shop model to include the As Source Party concern & the As Target Party concern
+
+## v1.2
+1. Improved the As Source Party concern to add the #relate! method
+2. Improved the As Target Party concern to add the #is_related! method

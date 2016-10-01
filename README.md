@@ -40,6 +40,8 @@ relation = Unidom::Party::PartyRelation.relate! source_party: company, target_pa
 
 Unidom::Party::PartyRelation.source_party_is(company).target_party_is(person).valid_at.alive
 # Find all relationships from the company & the person, like employment
+
+Unidom::Party::Collaborating.create! collaboration: project, collaborator: person, role_code: 'PJMG', name: 'Project Manager'
 ```
 
 
@@ -54,8 +56,10 @@ include Unidom::Party::Concerns::AsTargetParty
 The As Source Party concern do the following tasks for the includer automatically:  
 1. Define the has_many :target_party_relations macro as: ``has_many :target_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :source_party``
 2. Define the #relate! method as: ``relate!(to: nil, due_to: nil, at: Time.now)``
+3. Define the #relate? method as: ``relate?(to: nil, due_to: nil, at: Time.now)``
 
 ### As Target Party concern
 The As Target Party concern do the following tasks for the includer automatically:  
 1. Define the has_many :source_party_relations macro as: ``has_many :source_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :target_party``
 2. Define the #is_related! method as: ``is_related!(to: nil, due_to: nil, at: Time.now)``
+3. Define the #is_related? method as: ``is_related?(to: nil, due_to: nil, at: Time.now)``

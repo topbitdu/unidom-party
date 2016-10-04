@@ -42,6 +42,8 @@ Unidom::Party::PartyRelation.source_party_is(company).target_party_is(person).va
 # Find all relationships from the company & the person, like employment
 
 Unidom::Party::Collaborating.create! collaboration: project, collaborator: person, role_code: 'PJMG', name: 'Project Manager'
+# or the following source code do the same thing:
+Unidom::Party::Collaborating.collaborate! collaboration: project, collaborator: person, role_code: 'PJMG', name: 'Project Manager', opened_at: Time.now, priority: 1, grade: 1, description: nil, instruction: nil
 ```
 
 

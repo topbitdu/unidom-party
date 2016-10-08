@@ -66,6 +66,8 @@ Unidom::Party::Collaborating.collaborate! collaboration: project, collaborator: 
 ```ruby
 include Unidom::Party::Concerns::AsSourceParty
 include Unidom::Party::Concerns::AsTargetParty
+include Unidom::Party::Concerns::AsCollaboration
+include Unidom::Party::Concerns::AsCollaborator
 ```
 
 ### As Source Party concern
@@ -81,3 +83,13 @@ The As Target Party concern do the following tasks for the includer automaticall
 1. Define the has_many :source_party_relations macro as: ``has_many :source_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :target_party``  
 2. Define the #is_related! method as: ``is_related!(to: nil, due_to: nil, at: Time.now)``  
 3. Define the #is_related? method as: ``is_related?(to: nil, due_to: nil, at: Time.now)``
+
+### As Collaboration concern
+
+The As Collaboration concern do the following tasks for the includer automatically:  
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaboration``
+
+### As Collaborator concern
+
+The As Collaborator concern do the following tasks for the includer automatically:  
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``

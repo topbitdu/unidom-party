@@ -59,3 +59,7 @@
 
 ## v1.4
 1. Improve the Collaborating model to add the .collaborate! method
+
+## v1.5
+1. As Collaboration concern
+2. As Collaborator concern

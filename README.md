@@ -87,9 +87,12 @@ The As Target Party concern do the following tasks for the includer automaticall
 ### As Collaboration concern
 
 The As Collaboration concern do the following tasks for the includer automatically:  
-1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaboration``
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaboration``  
+2. Define the #is_collaborated! method as: ``is_collaborated!(by: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``
 
 ### As Collaborator concern
 
 The As Collaborator concern do the following tasks for the includer automatically:  
-1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``  
+2. Define the #collaborate! method as: ``collaborate!(on: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``
+

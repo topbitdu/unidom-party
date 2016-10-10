@@ -63,3 +63,7 @@
 ## v1.5
 1. As Collaboration concern
 2. As Collaborator concern
+
+## v1.6
+1. Improve the As Collaboration concern to add the #is_collaborated! method
+2. Improve the As Collaborator concern to add the #collaborate! method

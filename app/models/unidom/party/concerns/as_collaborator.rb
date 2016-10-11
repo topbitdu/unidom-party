@@ -17,7 +17,6 @@ module Unidom::Party::Concerns::AsCollaborator
       collaborating
     end
 
-=begin
     def collaborate?(on: nil, as: nil, at: Time.now, priority: nil, grade: nil)
       query = collaboratings
       query = query.collaboration_is on       if on.present?
@@ -26,7 +25,6 @@ module Unidom::Party::Concerns::AsCollaborator
       query = query.grade_is         grade    if grade.present?
       query.valid_at(now: at).alive.exists?
     end
-=end
 
   end
 

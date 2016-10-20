@@ -1,6 +1,3 @@
-module Unidom
-  module Party
-    class ApplicationController < ActionController::Base
-    end
-  end
+class Unidom::Party::ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 end

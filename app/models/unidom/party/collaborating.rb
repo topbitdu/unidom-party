@@ -1,6 +1,6 @@
 # Collaborating 是参与者以特定的角色进行协作。
 
-class Unidom::Party::Collaborating < ActiveRecord::Base
+class Unidom::Party::Collaborating < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_collaboratings'
 

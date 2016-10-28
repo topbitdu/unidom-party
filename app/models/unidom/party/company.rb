@@ -1,6 +1,6 @@
 # Company 是公司。
 
-class Unidom::Party::Company < ActiveRecord::Base
+class Unidom::Party::Company < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_companies'
 

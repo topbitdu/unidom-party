@@ -1,6 +1,6 @@
 # Person 是个人。
 
-class Unidom::Party::Person < ActiveRecord::Base
+class Unidom::Party::Person < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_people'
 

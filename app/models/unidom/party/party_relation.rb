@@ -1,6 +1,6 @@
 # Party Relation 是参与者关系。
 
-class Unidom::Party::PartyRelation < ActiveRecord::Base
+class Unidom::Party::PartyRelation < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_party_relations'
 

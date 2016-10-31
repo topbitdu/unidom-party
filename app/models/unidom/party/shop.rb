@@ -1,6 +1,6 @@
 # Shop 是店铺。
 
-class Unidom::Party::Shop < ActiveRecord::Base
+class Unidom::Party::Shop < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_shops'
 

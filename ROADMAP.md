@@ -71,3 +71,6 @@
 ## v1.7
 1. Improve the As Collaboration concern to add the #is_collaborated? method
 2. Improve the As Collaborator concern to add the #collaborate? method
+
+## v1.7.1
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.6

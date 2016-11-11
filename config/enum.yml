@@ -1,0 +1,13 @@
+enum:
+
+  # http://en.wikipedia.org/wiki/ISO/IEC_5218
+  # ISO 5218, GB/T 2261-1980
+  unidom_gender:
+    not_known:
+      code: '0'
+    male:
+      code: '1'
+    female:
+      code: '2'
+    not_applicable:
+      code: '9'

@@ -1,0 +1,10 @@
+'zh-CN':
+  enum:
+
+    # http://en.wikipedia.org/wiki/ISO/IEC_5218
+    # ISO 5218, GB/T 2261-1980
+    unidom_gender:
+      not_known:      未知
+      male:           男
+      female:         女
+      not_applicable: 保密 # 未说明

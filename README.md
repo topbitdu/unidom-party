@@ -97,3 +97,18 @@ The As Collaborator concern do the following tasks for the includer automaticall
 1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``  
 2. Define the #collaborate! method as: ``collaborate!(on: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``  
 3. Define the #collaborate? method as: ``collaborate?(on: nil, as: nil, at: Time.now, priority: 0, grade: 0)``
+
+
+
+## Enum codes
+
+### Gender enum code
+
+```ruby
+# http://en.wikipedia.org/wiki/ISO/IEC_5218
+# ISO 5218, GB/T 2261-1980
+Unidom::Party::Gender::NOT_KNOWN
+Unidom::Party::Gender::MALE
+Unidom::Party::Gender::FEMALE
+Unidom::Party::Gender::NOT_APPLICABLE
+```

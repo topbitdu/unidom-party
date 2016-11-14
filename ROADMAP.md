@@ -80,3 +80,6 @@
 
 ## v1.8
 1. Gender enum code
+
+## v1.9
+1. Marital Status enum code

@@ -83,4 +83,4 @@
 
 ## v1.8.1
 1. Improve the Gender enum code to follow the GB/T 2261.1-2003 in the i18n resources
-2. Improve the Ruby Gem Specification to depend on [progne_tapera](https://github.com/topbitdu/progne_tapera) v0.2
+2. Improve the Ruby Gem Specification to depend on [progne_tapera](https://github.com/topbitdu/progne_tapera) v0.3

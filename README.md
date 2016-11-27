@@ -106,7 +106,7 @@ The As Collaborator concern do the following tasks for the includer automaticall
 
 ```ruby
 # http://en.wikipedia.org/wiki/ISO/IEC_5218
-# ISO 5218, GB/T 2261-1980
+# ISO 5218, GB/T 2261.1-2003
 Unidom::Party::Gender::NOT_KNOWN
 Unidom::Party::Gender::MALE
 Unidom::Party::Gender::FEMALE

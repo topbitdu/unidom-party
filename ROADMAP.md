@@ -1,7 +1,7 @@
 # Unidom Party Roadmap 参与者领域模型引擎路线图
 
 ## v0.1
-1. Party Relation model & migration
+1. Party Relation model & migration (20010101000000)
 2. Person model & migration
 3. Shop model & migration
 

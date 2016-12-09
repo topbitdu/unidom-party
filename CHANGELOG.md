@@ -2,7 +2,7 @@
 
 ## v0.1
 1. Party Relation model & migration (20010101000000)
-2. Person model & migration
+2. Person model & migration (20010102000000)
 3. Shop model & migration
 
 ## v0.2

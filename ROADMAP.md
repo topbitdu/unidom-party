@@ -3,7 +3,7 @@
 ## v0.1
 1. Party Relation model & migration (20010101000000)
 2. Person model & migration (20010102000000)
-3. Shop model & migration
+3. Shop model & migration (20010103000000)
 
 ## v0.2
 1. Improve the Party Relation model to include the Model Extension concern

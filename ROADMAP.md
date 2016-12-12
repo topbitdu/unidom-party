@@ -11,7 +11,7 @@
 3. Improved the Shop model to include the Model Extension concern
 
 ## v0.3
-1. Government Agency model & migration
+1. Government Agency model & migration (20010104000000)
 
 ## v0.4
 1. Company model & migration

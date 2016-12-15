@@ -14,7 +14,7 @@
 1. Government Agency model & migration (20010104000000)
 
 ## v0.4
-1. Company model & migration
+1. Company model & migration (20010105000000)
 
 ## v0.4.1
 1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5

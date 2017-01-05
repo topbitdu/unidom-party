@@ -1,3 +1,4 @@
+##
 # Company 是公司。
 
 class Unidom::Party::Company < Unidom::Party::ApplicationRecord

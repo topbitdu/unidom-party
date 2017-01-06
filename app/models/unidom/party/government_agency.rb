@@ -1,5 +1,7 @@
+##
 # Government Agency 是政府机构。
 # function_code 是行政职能代码： PLST: Police Station 公安局, PLSS: Police Sub-Station 派出所
+
 class Unidom::Party::GovernmentAgency < Unidom::Party::ApplicationRecord
 
   self.table_name = 'unidom_government_agencies'

@@ -1,3 +1,4 @@
+##
 # Person 是个人。
 
 class Unidom::Party::Person < Unidom::Party::ApplicationRecord

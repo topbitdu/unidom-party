@@ -1,3 +1,4 @@
+##
 # Party Relation 是参与者关系。
 
 class Unidom::Party::PartyRelation < Unidom::Party::ApplicationRecord

@@ -1,3 +1,4 @@
+##
 # Shop 是店铺。
 
 class Unidom::Party::Shop < Unidom::Party::ApplicationRecord

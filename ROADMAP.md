@@ -92,3 +92,8 @@
 ## v1.8.3
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.8
 2. Improve the Engine class to integrate the Engine Extension concern
+
+## v1.8.4
+1. Party Relation examples
+2. Person examples
+3. As Source Party shared examples

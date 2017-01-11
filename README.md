@@ -1,6 +1,8 @@
 # Unidom Party 参与者领域模型引擎
 
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/unidom-party/frames)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+
 [![Gem Version](https://badge.fury.io/rb/unidom-party.svg)](https://badge.fury.io/rb/unidom-party)
 [![Dependency Status](https://gemnasium.com/badges/github.com/topbitdu/unidom-party.svg)](https://gemnasium.com/github.com/topbitdu/unidom-party)
 
@@ -72,30 +74,30 @@ include Unidom::Party::Concerns::AsCollaborator
 
 ### As Source Party concern
 
-The As Source Party concern do the following tasks for the includer automatically:  
-1. Define the has_many :target_party_relations macro as: ``has_many :target_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :source_party``  
-2. Define the #relate! method as: ``relate!(to: nil, due_to: nil, at: Time.now)``  
+The As Source Party concern do the following tasks for the includer automatically:
+1. Define the has_many :target_party_relations macro as: ``has_many :target_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :source_party``
+2. Define the #relate! method as: ``relate!(to: nil, due_to: nil, at: Time.now)``
 3. Define the #relate? method as: ``relate?(to: nil, due_to: nil, at: Time.now)``
 
 ### As Target Party concern
 
-The As Target Party concern do the following tasks for the includer automatically:  
-1. Define the has_many :source_party_relations macro as: ``has_many :source_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :target_party``  
-2. Define the #is_related! method as: ``is_related!(to: nil, due_to: nil, at: Time.now)``  
+The As Target Party concern do the following tasks for the includer automatically:
+1. Define the has_many :source_party_relations macro as: ``has_many :source_party_relations, class_name: 'Unidom::Party::PartyRelation', as: :target_party``
+2. Define the #is_related! method as: ``is_related!(to: nil, due_to: nil, at: Time.now)``
 3. Define the #is_related? method as: ``is_related?(to: nil, due_to: nil, at: Time.now)``
 
 ### As Collaboration concern
 
-The As Collaboration concern do the following tasks for the includer automatically:  
-1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaboration``  
-2. Define the #is_collaborated! method as: ``is_collaborated!(by: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``  
+The As Collaboration concern do the following tasks for the includer automatically:
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaboration``
+2. Define the #is_collaborated! method as: ``is_collaborated!(by: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``
 3. Define the #is_collaborated? method as: ``is_collaborated?(by: nil, as: nil, at: Time.now, priority: 0, grade: 0)``
 
 ### As Collaborator concern
 
-The As Collaborator concern do the following tasks for the includer automatically:  
-1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``  
-2. Define the #collaborate! method as: ``collaborate!(on: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``  
+The As Collaborator concern do the following tasks for the includer automatically:
+1. Define the has_many :collaboratings macro as: ``has_many :collaboratings, class_name: 'Unidom::Party::Collaborating', as: :collaborator``
+2. Define the #collaborate! method as: ``collaborate!(on: nil, as: nil, at: Time.now, name: nil, priority: 0, grade: 0)``
 3. Define the #collaborate? method as: ``collaborate?(on: nil, as: nil, at: Time.now, priority: 0, grade: 0)``
 
 

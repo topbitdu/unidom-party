@@ -114,3 +114,12 @@ Unidom::Party::Gender::MALE
 Unidom::Party::Gender::FEMALE
 Unidom::Party::Gender::NOT_APPLICABLE
 ```
+
+
+
+## RSpec examples
+
+```ruby
+# spec/unidom_spec.rb
+require 'unidom/party/rspec'
+```

@@ -11,4 +11,4 @@ class Unidom::Party::Person < Unidom::Party::ApplicationRecord
 
   validates :name, presence: true, length: { in: 2..self.columns_hash['name'].limit }
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Party::Person'

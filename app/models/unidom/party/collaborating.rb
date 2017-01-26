@@ -28,4 +28,4 @@ class Unidom::Party::Collaborating < Unidom::Party::ApplicationRecord
     collaborating
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Party::Collaborating'

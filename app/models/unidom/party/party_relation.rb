@@ -23,4 +23,4 @@ class Unidom::Party::PartyRelation < Unidom::Party::ApplicationRecord
     relation
   end
 
-end
+end unless Unidom::Common::Neglection.namespace_neglected? 'Unidom::Party::PartyRelation'

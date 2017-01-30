@@ -98,3 +98,7 @@
 2. Party Relation examples
 3. Person examples
 4. RSpec module
+
+## v1.8.5
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.9
+2. Improve the models to support the namespace neglecting

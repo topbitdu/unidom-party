@@ -16,7 +16,7 @@ describe Unidom::Party::PartyRelation, type: :model do
         source_party_id:   Unidom::Common::NULL_UUID,
         source_party_type: 'Unidom::Party::Person',
         target_party_id:   Unidom::Common::NULL_UUID,
-        target_party_type: 'Unidom::Party::Person' #,
+        target_party_type: 'Unidom::Party::Person'
         #priority:          nil,
         #grade:             nil
       })

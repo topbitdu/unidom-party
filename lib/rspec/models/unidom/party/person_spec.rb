@@ -29,7 +29,9 @@ describe Unidom::Party::Person, type: :model do
 
   context do
 
-    model_attributes = { name: 'Tim' }
+    model_attributes = {
+      name: 'Tim'
+    }
 
     it_behaves_like 'Unidom::Common::Concerns::ModelExtension', model_attributes
     it_behaves_like 'Unidom::Party::Concerns::AsSourceParty',   model_attributes

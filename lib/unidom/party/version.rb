@@ -1,5 +1,5 @@
 module Unidom
   module Party
-    VERSION = '1.8.5'.freeze
+    VERSION = '1.9'.freeze
   end
 end

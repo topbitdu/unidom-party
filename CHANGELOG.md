@@ -55,7 +55,7 @@
 ## v1.3
 1. Collaborating model & migration
 2. Improved the As Source Party concern to add the #relate? method
-3. Improve the As Target Party concern to add the #is_related? method
+3. Improved the As Target Party concern to add the #is_related? method
 
 ## v1.4
 1. Improve the Collaborating model to add the .collaborate! method

@@ -58,7 +58,7 @@
 3. Improved the As Target Party concern to add the #is_related? method
 
 ## v1.4
-1. Improve the Collaborating model to add the .collaborate! method
+1. Improved the Collaborating model to add the .collaborate! method
 
 ## v1.5
 1. As Collaboration concern

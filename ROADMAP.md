@@ -107,3 +107,6 @@
 1. Models RSpec examples manifest
 2. Types RSpec examples manifest
 3. Validators RSpec examples manifest
+
+## v1.9.1
+1. Improve the Gender spec to follow GB/T 2261-1980

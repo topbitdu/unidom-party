@@ -7,9 +7,6 @@ class Unidom::Party::PartyRelation < Unidom::Party::ApplicationRecord
 
   include Unidom::Common::Concerns::ModelExtension
 
-  #validates :grade,    presence: true, numericality: { integer_only: true }
-  #validates :priority, presence: true, numericality: { integer_only: true }
-
   belongs_to :source_party, polymorphic: true
   belongs_to :target_party, polymorphic: true
 

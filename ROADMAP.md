@@ -18,7 +18,7 @@
 
 ## v0.4.1
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
-2. Improved the Government Agency model for table name
+2. Improve the Government Agency model for table name
 
 ## v0.5
 1. Improved the Party Relation model to add validations for the #``grade`` & #``priority`` attributes

@@ -17,7 +17,7 @@
 1. Company model & migration (20010105000000)
 
 ## v0.4.1
-1. Improved the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.5
 2. Improved the Government Agency model for table name
 
 ## v0.5

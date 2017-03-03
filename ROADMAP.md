@@ -21,7 +21,7 @@
 2. Improve the Government Agency model for table name
 
 ## v0.5
-1. Improved the Party Relation model to add validations for the #``grade`` & #``priority`` attributes
+1. Improve the Party Relation model to add validations for the #``grade`` & #``priority`` attributes
 2. Improved the Party Relation model for table name
 
 ## v0.6

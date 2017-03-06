@@ -117,3 +117,7 @@
 3. Improve the Government Agency spec for the validations on the #name attribute
 4. Improve the Person spec for the validations on the #name attribute
 5. Improve the Shop spec for the validations on the #name attribute
+
+## v1.9.3
+1. Improve the Party Relation spec for the source_party_is scope, & the target_party_is scope
+2. Improve the Collaborating spec for the ``belongs_to :collaborator, polymorphic: true`` macro

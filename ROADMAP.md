@@ -128,3 +128,8 @@
 3. Improve the Government Agency spec for the validations on the #name attribute
 4. Improve the Person spec for the validations on the #name attribute
 5. Improve the Shop spec for the validations on the #name attribute
+
+## v1.9.5
+1. Improve the Company spec for the As Source Party concern
+2. Improve the Government Agency spec for the As Source Party concern
+3. Improve the Shop spec for the As Source Party concern

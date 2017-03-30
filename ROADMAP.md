@@ -133,3 +133,11 @@
 1. Improve the Company spec for the As Source Party concern
 2. Improve the Government Agency spec for the As Source Party concern
 3. Improve the Shop spec for the As Source Party concern
+
+## v1.9.6
+1. As Target Party shared examples
+2. Improve the Company spec for the As Target Party concern
+3. Improve the Government Agency spec for the As Target Party concern
+4. Improve the Person spec for the As Target Party concern
+5. Improve the Shop spec for the As Target Party concern
+6. RSpec shared examples manifest

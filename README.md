@@ -135,6 +135,8 @@ end
 
 ## RSpec examples
 
+### RSpec example manifest (run automatically)
+
 ```ruby
 # spec/models/unidom_spec.rb
 require 'unidom/party/models_rspec'
@@ -144,4 +146,34 @@ require 'unidom/party/types_rspec'
 
 # spec/validators/unidom_spec.rb
 require 'unidom/party/validators_rspec'
+```
+
+### RSpec shared examples (to be integrated)
+
+```ruby
+# The Unidom::Party::Company model, the Unidom::Party::GovernmentAgency model, the Unidom::Party::Person model, & the Unidom::Party::Shop model already include the Unidom::Party::Concerns::AsSourceParty concern, & the Unidom::Party::Concerns::AsTargetParty concern
+
+# app/models/your_party.rb
+class YourParty < ActiveRecord::Base
+
+  include Unidom::Common::Concerns::ModelExtension
+  include Unidom::Party::Concerns::AsSourceParty
+  include Unidom::Party::Concerns::AsTargetParty
+
+end
+
+# spec/support/unidom_rspec_shared_examples.rb
+require 'unidom/party/rspec_shared_examples'
+
+# spec/models/your_party_spec.rb
+describe YourParty, type: :model do
+
+  model_attribtues = {
+    your_attribtue: 'your value'
+  }
+
+  it_behaves_like 'Unidom::Party::Concerns::AsSourceParty', model_attribtues
+  it_behaves_like 'Unidom::Party::Concerns::AsTargetParty', model_attribtues
+
+end
 ```

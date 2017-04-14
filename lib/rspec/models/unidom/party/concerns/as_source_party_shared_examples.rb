@@ -1,6 +1,6 @@
-shared_examples 'Unidom::Party::Concerns::AsSourceParty' do |model_attributes|
+shared_examples 'Unidom::Party::Concerns::AsSourceParty' do |model_attributes, target_party, linkage_code|
 
-  describe '#target_party_relations' do
+  context do
 
     target_person_1 = Unidom::Party::Person.create! name: 'Tim'
     target_person_2 = Unidom::Party::Person.create! name: 'Tom'
@@ -10,9 +10,10 @@ shared_examples 'Unidom::Party::Concerns::AsSourceParty' do |model_attributes|
 
     it_behaves_like 'has_many', model_attributes, :target_party_relations, Unidom::Party::PartyRelation, [ target_party_relation_1_attributes, target_party_relation_2_attributes ]
 
-  end
+    model = described_class.create! model_attributes
+    it_behaves_like 'assert_present!', model, :relate!, [ { to: target_party, due_to: linkage_code, at: Time.now } ], [ :to, :due_to, :at ]
+    it_behaves_like 'assert_present!', model, :relate?, [ { to: target_party, due_to: linkage_code, at: Time.now } ], [ :to, :due_to, :at ]
 
-  # relate!
-  # relate?
+  end
 
 end

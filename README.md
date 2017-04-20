@@ -168,12 +168,20 @@ require 'unidom/party/rspec_shared_examples'
 # spec/models/your_party_spec.rb
 describe YourParty, type: :model do
 
-  model_attribtues = {
-    your_attribtue: 'your value'
-  }
+  context do
 
-  it_behaves_like 'Unidom::Party::Concerns::AsSourceParty', model_attribtues
-  it_behaves_like 'Unidom::Party::Concerns::AsTargetParty', model_attribtues
+    model_attribtues = {
+      your_attribtue: 'your value'
+    }
+
+    target_party = described_class.create! model_attributes
+    source_party = described_class.create! model_attributes
+    linkage_code = 'SELF'
+
+    it_behaves_like 'Unidom::Party::Concerns::AsSourceParty', model_attributes, target_party, linkage_code
+    it_behaves_like 'Unidom::Party::Concerns::AsTargetParty', model_attributes, source_party, linkage_code
+
+  end
 
 end
 ```

@@ -30,7 +30,7 @@
 
 ## v0.7
 1. Improve the Party Relation model to add the .``relate!`` method
-2. Improve the Party Relation model to deprecate the ::relate method
+2. Improve the Party Relation model to deprecate the .``relate`` method
 3. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v0.9
 
 ## v1.0

@@ -50,7 +50,7 @@
 
 ## v1.2
 1. Improve the As Source Party concern to add the #``relate!`` method
-2. Improve the As Target Party concern to add the #is_related! method
+2. Improve the As Target Party concern to add the #``is_related!`` method
 
 ## v1.3
 1. Collaborating model & migration

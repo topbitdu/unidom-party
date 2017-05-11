@@ -126,7 +126,7 @@
 1. Improve the Collaborating spec for the validations on the #``name`` attribute
 2. Improve the Company spec for the validations on the #``name`` attribute
 3. Improve the Government Agency spec for the validations on the #``name`` attribute
-4. Improve the Person spec for the validations on the #name attribute
+4. Improve the Person spec for the validations on the #``name`` attribute
 5. Improve the Shop spec for the validations on the #name attribute
 
 ## v1.9.5

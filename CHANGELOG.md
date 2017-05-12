@@ -144,7 +144,7 @@
 
 ## v1.9.7
 1. Improve the As Source Party concern for the argument validations of the #``relate!`` method, & the #``relate?`` method
-2. Improve the As Target Party concern for the argument validations of the #is_related! method, & the #is_related? method
+2. Improve the As Target Party concern for the argument validations of the #``is_related!`` method, & the #is_related? method
 3. Improve the As Source Party shared examples for the argument validations of the #relate! method, & the #relate? method
 4. Improve the As Target Party shared examples for the argument validations of the #is_related! method, & the #is_related? method
 5. Improve the Company spec for the As Source Party concern, & the As Target Party concern

@@ -153,5 +153,5 @@
 8. Improve the Shop spec for the As Source Party concern, & the As Target Party concern
 
 ## v1.9.8
-1. Improve the Ruby Gem Specification to depend on unidom-common v1.10
+1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.10
 2. Improve the Party Relation migration, the Person migration, the Shop migration, the Government Agency migration, the Company migration, the Collaborating migration for the #opened_at column, & the #closed_at column

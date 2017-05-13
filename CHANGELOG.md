@@ -109,7 +109,7 @@
 3. Validators RSpec examples manifest
 
 ## v1.9.1
-1. Improve the Gender spec to follow GB/T 2261-1980
+1. Improved the Gender spec to follow GB/T 2261-1980
 
 ## v1.9.2
 1. Improve the Collaborating spec for the validations on the #``name`` attribute

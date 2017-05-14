@@ -131,7 +131,7 @@
 
 ## v1.9.5
 1. Improved the Company spec for the As Source Party concern
-2. Improve the Government Agency spec for the As Source Party concern
+2. Improved the Government Agency spec for the As Source Party concern
 3. Improve the Shop spec for the As Source Party concern
 
 ## v1.9.6

@@ -139,7 +139,7 @@
 2. Improved the Company spec for the As Target Party concern
 3. Improved the Government Agency spec for the As Target Party concern
 4. Improved the Person spec for the As Target Party concern
-5. Improve the Shop spec for the As Target Party concern
+5. Improved the Shop spec for the As Target Party concern
 6. RSpec shared examples manifest
 
 ## v1.9.7

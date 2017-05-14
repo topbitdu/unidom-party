@@ -130,7 +130,7 @@
 5. Improved the Shop spec for the validations on the #``name`` attribute
 
 ## v1.9.5
-1. Improve the Company spec for the As Source Party concern
+1. Improved the Company spec for the As Source Party concern
 2. Improve the Government Agency spec for the As Source Party concern
 3. Improve the Shop spec for the As Source Party concern
 

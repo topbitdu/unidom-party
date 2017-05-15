@@ -150,7 +150,7 @@
 5. Improved the Company spec for the As Source Party concern, & the As Target Party concern
 6. Improved the Government Agency spec for the As Source Party concern, & the As Target Party concern
 7. Improved the Person spec for the As Source Party concern, & the As Target Party concern
-8. Improve the Shop spec for the As Source Party concern, & the As Target Party concern
+8. Improved the Shop spec for the As Source Party concern, & the As Target Party concern
 
 ## v1.9.8
 1. Improve the Ruby Gem Specification to depend on [unidom-common](https://github.com/topbitdu/unidom-common) v1.10

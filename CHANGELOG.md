@@ -147,7 +147,7 @@
 2. Improved the As Target Party concern for the argument validations of the #``is_related!`` method, & the #``is_related?`` method
 3. Improved the As Source Party shared examples for the argument validations of the #``relate!`` method, & the #``relate?`` method
 4. Improved the As Target Party shared examples for the argument validations of the #``is_related!`` method, & the #``is_related?`` method
-5. Improve the Company spec for the As Source Party concern, & the As Target Party concern
+5. Improved the Company spec for the As Source Party concern, & the As Target Party concern
 6. Improve the Government Agency spec for the As Source Party concern, & the As Target Party concern
 7. Improve the Person spec for the As Source Party concern, & the As Target Party concern
 8. Improve the Shop spec for the As Source Party concern, & the As Target Party concern

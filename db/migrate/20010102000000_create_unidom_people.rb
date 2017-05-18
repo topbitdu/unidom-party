@@ -8,7 +8,7 @@ class CreateUnidomPeople < ActiveRecord::Migration
       t.text   :description
 
       t.string   :slug,             null: false, default: nil, limit: 200
-      t.column   :state, 'char(1)', null: false, default: 'C'
+      t.column   :state, 'char(1)', null: false, default: Unidom::Common::STATE
       t.datetime :opened_at,        null: false, default: Unidom::Common::OPENED_AT
       t.datetime :closed_at,        null: false, default: Unidom::Common::CLOSED_AT
       t.boolean  :defunct,          null: false, default: false
